@@ -1,23 +1,34 @@
 public class test {
-    public static void main (String args[]){
-        adresse A1=new adresse();
-        A1.gouvernorat="tunis";
-        A1.ville="ariana";
-        A1.codepostal=2091;
-        A1.affiche();
-        System.out.println(A1);
-        System.out.println(A1.ToString());
-        A1.codepostal=2074;
-        A1.affiche();
-        adresse A2=new adresse("tunis"+"sidibouzid"+9100);
-        chercheur c1=new chercheur();
-        c1.Set nom("jamila");
-        c1.set poste("D.V.W");
-        c1.set numero(55);
-        c1.affiche();
-        System.out.println(c1.ToString());
-        System.out.println(c1);
-        System.out.println(c1.nb);
+    public static void main(String[] args) {
+        Produit p1 = new Produit(1021, "Lait et Delice", "Sicam", 1.200);
+        Produit p2 = new Produit(2510, "Yaourt et Vitalait", "Vitalait", 1.250);
+        Produit p3 = new Produit(3250, "Tomate", "Sicam", 1.200);
 
+        if (p1.getLibellé()="Lait") {
+            p1.setPrix(0.70);
+        }
+        p2.setPrix(0.70);
+        p3.setPrix(0.70);
+
+        System.out.println("Produit 1 :");
+        p1.afficher();
+
+        System.out.println("Produit 2 :");
+        p2.afficher();
+
+        System.out.println("Produit 3 :");
+        p3.afficher();
+
+    public String toString() {
+        return "Identifiant : " +this.identifiant + "Libellé : " + this.libellé + "Marque : " + this.marque  + "Prix : " + this.prix;
     }
+        System.out.println("Produit 1 (toString) :");
+        System.out.println(p1.toString());
+
+        System.out.println("Produit 2 (toString) :");
+        System.out.println(p2.toString());
+
+        System.out.println("Produit 3 (toString) :");
+        System.out.println(p3.toString());
 }
+
