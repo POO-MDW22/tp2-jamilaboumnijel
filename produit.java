@@ -1,4 +1,4 @@
-public class Produit {
+public class produit {
     private int identifiant;
     private String libellé;
     private String marque;
@@ -27,5 +27,6 @@ public class Produit {
     public String getLibellé() {
         return libellé;
     }
-    public static void main(String[] args) {}
+
+
 }
