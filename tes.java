@@ -12,6 +12,12 @@ public class tes {
         System.out.println("le nombre  du magasin est"+MG1.num);
        System.out.println(p1.comparer1(p2));
       System.out.println( p1.comparer2(p2,p3));
+        magasin carrefour=new magasin(5001,"centre ville",20);
+        magasin monoprix=new magasin(5100,"menzah 6",11);
+        vendeur v1=new vendeur(6,"sabrine","sidibouzid",28);
+        responsable r1=new responsable("islem",2,"tunis",52,100);
+        responsable r2=new responsable("jamila",24,"bizerte",41,400);
+        caissier c1=new caissier("isra",5,"tunis",4,23);
     }
 }
 
